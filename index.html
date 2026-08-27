@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anderson Castro | Portfólio</title>
+    
+    <!-- Tailwind CSS (CDN para rodar localmente sem instalação) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0a0a0a',     /* Preto profundo */
+                        cardBg: '#171717',     /* Cinza muito escuro */
+                        accent: '#3b82f6',     /* Azul elegante */
+                        accentHover: '#2563eb'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons (Ícones minimalistas) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0a0a;
+            color: #d4d4d8; /* Zinc 300 */
+        }
+        /* Efeito suave de rolagem */
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="antialiased selection:bg-accent selection:text-white">
+
+    <!-- Container Centralizado -->
+    <main class="max-w-3xl mx-auto px-6 py-16 md:py-24 flex flex-col gap-24">
+
+        <!-- 1. HEADER -->
+        <header class="flex flex-col md:flex-row items-center md:items-start gap-8 text-center md:text-left animate-fade-in">
+            <!-- Puxa a imagem diretamente do seu GitHub -->
+            <img src="https://github.com/andersoncastro-ti.png" alt="Foto de Anderson Castro" 
+                 class="w-32 h-32 md:w-40 md:h-40 rounded-full border-2 border-accent object-cover shadow-lg shadow-accent/20">
+            
+            <div class="flex flex-col justify-center mt-2">
+                <h1 class="text-4xl md:text-5xl font-bold text-white tracking-tight">Anderson Castro</h1>
+                <p class="text-xl text-accent font-medium mt-2">Profissional de TI & Desenvolvedor</p>
+                <div class="flex gap-4 mt-6 justify-center md:justify-start">
+                    <a href="https://github.com/andersoncastro-ti" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+                        <i data-lucide="github" class="w-6 h-6"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/[SEU-LINK]" target="_blank" class="text-gray-400 hover:text-accent transition-colors">
+                        <i data-lucide="linkedin" class="w-6 h-6"></i>
+                    </a>
+                    <a href="mailto:andersoncastro.ti@gmail.com" class="text-gray-400 hover:text-white transition-colors">
+                        <i data-lucide="mail" class="w-6 h-6"></i>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- 2. SOBRE MIM -->
+        <section>
+            <h2 class="text-2xl font-semibold text-white mb-6 flex items-center gap-2 border-b border-gray-800 pb-2">
+                <i data-lucide="user" class="w-5 h-5 text-accent"></i> Sobre mim
+            </h2>
+            <p class="text-gray-400 leading-relaxed text-lg">
+                [EDITAR] Olá, sou o Anderson. Sou um profissional apaixonado por tecnologia e desenvolvimento de software. Tenho experiência em criar soluções eficientes, focando sempre em código limpo, arquiteturas escaláveis e na melhor experiência para o usuário. Meu foco atual é dominar tecnologias modernas e resolver problemas complexos com inovação.
+            </p>
+        </section>
+
+        <!-- 3. PROJETOS -->
+        <section>
+            <h2 class="text-2xl font-semibold text-white mb-6 flex items-center gap-2 border-b border-gray-800 pb-2">
+                <i data-lucide="folder-code" class="w-5 h-5 text-accent"></i> Projetos em Destaque
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                
+                <!-- Card Projeto 1 -->
+                <div class="bg-cardBg border border-gray-800 rounded-xl p-6 hover:border-accent transition-colors group">
+                    <h3 class="text-xl font-bold text-white mb-2 group-hover:text-accent transition-colors">Nome do Projeto 1</h3>
+                    <p class="text-sm text-gray-400 mb-4 line-clamp-3">
+                        [EDITAR] Breve descrição do repositório. Uma API RESTful desenvolvida para gerenciar dados de forma rápida e segura.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="px-2 py-1 text-xs font-medium bg-gray-800 text-gray-300 rounded-md">Node.js</span>
+                        <span class="px-2 py-1 text-xs font-medium bg-gray-800 text-gray-300 rounded-md">Express</span>
+                    </div>
+                    <a href="https://github.com/andersoncastro-ti/projeto-1" target="_blank" class="inline-flex items-center gap-1 text-sm font-medium text-accent hover:text-accentHover">
+                        Ver repositório <i data-lucide="external-link" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <!-- Card Projeto 2 -->
+                <div class="bg-cardBg border border-gray-800 rounded-xl p-6 hover:border-accent transition-colors group">
+                    <h3 class="text-xl font-bold text-white mb-2 group-hover:text-accent transition-colors">Nome do Projeto 2</h3>
+                    <p class="text-sm text-gray-400 mb-4 line-clamp-3">
+                        [EDITAR] Aplicação front-end com design responsivo. Consome APIs externas e gerencia estado global.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="px-2 py-1 text-xs font-medium bg-gray-800 text-gray-300 rounded-md">React</span>
+                        <span class="px-2 py-1 text-xs font-medium bg-gray-800 text-gray-300 rounded-md">Tailwind CSS</span>
+                    </div>
+                    <a href="https://github.com/andersoncastro-ti/projeto-2" target="_blank" class="inline-flex items-center gap-1 text-sm font-medium text-accent hover:text-accentHover">
+                        Ver repositório <i data-lucide="external-link" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+            </div>
+            
+            <div class="mt-6 text-center md:text-left">
+                <a href="https://github.com/andersoncastro-ti?tab=repositories" target="_blank" class="text-gray-400 hover:text-white text-sm font-medium inline-flex items-center gap-2 transition-colors">
+                    Ver todos os repositórios no GitHub <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- 4. HABILIDADES -->
+        <section>
+            <h2 class="text-2xl font-semibold text-white mb-6 flex items-center gap-2 border-b border-gray-800 pb-2">
+                <i data-lucide="cpu" class="w-5 h-5 text-accent"></i> Habilidades & Tecnologias
+            </h2>
+            <div class="flex flex-wrap gap-3">
+                <!-- Edite as tags abaixo conforme suas linguagens e ferramentas -->
+                <span class="px-4 py-2 bg-cardBg border border-gray-800 text-gray-300 rounded-full text-sm font-medium hover:border-accent transition-colors cursor-default">JavaScript</span>
+                <span class="px-4 py-2 bg-cardBg border border-gray-800 text-gray-300 rounded-full text-sm font-medium hover:border-accent transition-colors cursor-default">TypeScript</span>
+                <span class="px-4 py-2 bg-cardBg border border-gray-800 text-gray-300 rounded-full text-sm font-medium hover:border-accent transition-colors cursor-default">React</span>
+                <span class="px-4 py-2 bg-cardBg border border-gray-800 text-gray-300 rounded-full text-sm font-medium hover:border-accent transition-colors cursor-default">Node.js</span>
+                <span class="px-4 py-2 bg-cardBg border border-gray-800 text-gray-300 rounded-full text-sm font-medium hover:border-accent transition-colors cursor-default">Python</span>
+                <span class="px-4 py-2 bg-cardBg border border-gray-800 text-gray-300 rounded-full text-sm font-medium hover:border-accent transition-colors cursor-default">SQL / NoSQL</span>
+                <span class="px-4 py-2 bg-cardBg border border-gray-800 text-gray-300 rounded-full text-sm font-medium hover:border-accent transition-colors cursor-default">Git & GitHub</span>
+                <span class="px-4 py-2 bg-cardBg border border-gray-800 text-gray-300 rounded-full text-sm font-medium hover:border-accent transition-colors cursor-default">Linux</span>
+            </div>
+        </section>
+
+        <!-- 5. CONTATO -->
+        <section class="bg-cardBg border border-gray-800 rounded-2xl p-8 text-center">
+            <h2 class="text-2xl font-bold text-white mb-4">Vamos trabalhar juntos?</h2>
+            <p class="text-gray-400 mb-8 max-w-lg mx-auto">
+                Estou sempre aberto a novos desafios, projetos freelance e oportunidades de networking. Sinta-se à vontade para entrar em contato.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="mailto:andersoncastro.ti@gmail.com" class="px-6 py-3 bg-accent text-white font-semibold rounded-lg hover:bg-accentHover transition-colors flex items-center justify-center gap-2">
+                    <i data-lucide="mail" class="w-5 h-5"></i> Enviar E-mail
+                </a>
+                <a href="https://www.linkedin.com/in/anderson-de-castro/" target="_blank" class="px-6 py-3 bg-transparent border border-gray-700 text-white font-semibold rounded-lg hover:bg-gray-800 transition-colors flex items-center justify-center gap-2">
+                    <i data-lucide="linkedin" class="w-5 h-5"></i> LinkedIn
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 6. RODAPÉ -->
+    <footer class="border-t border-gray-900 py-8 text-center text-sm text-gray-500">
+        <p>&copy; 2026 Anderson Castro. Todos os direitos reservados.</p>
+        <p class="mt-1">Construído com HTML5 & Tailwind CSS.</p>
+    </footer>
+
+    <!-- Inicialização dos Ícones -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
